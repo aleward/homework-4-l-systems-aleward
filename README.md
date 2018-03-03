@@ -1,5 +1,44 @@
 # Homework 4: L-systems
 
+
+Name: Alexis Ward
+
+PennKey: aleward
+
+A link to the online implementation: here
+
+DESCRIPTION OF AXIOM
+
+Expansions:
+* "X"  ->  "MF-−--+F+F+F++F"
+* "F"  ->  "F[RM&-F&-F^F^+F^[++&FFL[MM^FF&FML++LM]]^FLM]"
+* "R"  ->  "R"
+* "M"  ->  "M"
+* "L"  ->  "L"
+* "+"  ->  "+"
+* "-"  ->  "-"
+* "&"  ->  "&"
+* "^"  ->  "^"
+* "["  ->  "["
+* "]"  ->  "]"
+
+Rules:
+* "X"  ->  a placeholder for expansions
+* "F"  ->  draws a branch-like object and moves forward
+* "R"  ->  rotates turtle about 90° (with some random variation) along its current Y-Axis
+* "M"  ->  changes magnitude of the main branch angle and (maybe) negates it
+* "L"  ->  draws a leaf
+* "+"  ->  rotates turtle slightly along its current Y-Axis
+* "-"  ->  rotates turtle slightly (the opposite way) along its current Y-Axis
+* "&"  -> rotates turtle slightly along its current Z-Axis
+* "^"  ->  rotates turtle slightly (the opposite way) along its current Z-Axis
+* "["  ->  creates new turtle state
+* "]"  ->  restores previous turtle state
+
+Starting String:
+* "X"
+
+
 For this assignment, you will design a set of formal grammar rules to create
 a plant life using an L-system program. Once again, you will work from a
 Typescript / WebGL 2.0 base code like the one you used in homework 0. You will
